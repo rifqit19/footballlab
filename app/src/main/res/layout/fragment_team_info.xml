@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".League.DetailLeague.Team.DetailTeam.TeamInfo.FragmentTeamInfo"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressbarTeamInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lineaTeamInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_mid"
+            >
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginLeft="@dimen/margin_mid"-->
+                <!--android:layout_marginTop="@dimen/margin_mid"-->
+                <!--android:layout_marginRight="@dimen/margin_mid"-->
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/icon_midup_size"-->
+                    <!--android:layout_height="@dimen/icon_midup_size"-->
+                    <!--android:src="@drawable/team"-->
+                    <!--android:layout_gravity="center_vertical"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="About Team"-->
+                    <!--android:textColor="@color/textColor"-->
+                    <!--android:textSize="@dimen/title_small_size"-->
+                    <!--android:layout_marginLeft="@dimen/margin_extra_small"-->
+                    <!--android:fontFamily="@font/helvetica_neu_bold"/>-->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:layout_marginRight="@dimen/margin_mid"
+                android:layout_marginTop="@dimen/margin_mid"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_small_size"
+                android:text="Description"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_mid"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_mid"
+                        android:layout_marginRight="@dimen/margin_mid"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/championship"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="League"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_mid"
+                        android:layout_marginRight="@dimen/margin_mid"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/stadium"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Stadium"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_mid"
+                        android:layout_marginRight="@dimen/margin_mid"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/coach"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Coach"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helveticaneue_medium"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helveticaneue_medium"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/textColor"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helveticaneue_medium"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_extra_small">
+
+                    <TextView
+                        android:id="@+id/leagueTeam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LaLiga"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helveticaneue_medium"/>
+
+                    <TextView
+                        android:id="@+id/stadiumTeam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CampNou"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helveticaneue_medium"/>
+
+                    <TextView
+                        android:id="@+id/coachTeam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bambang"
+                        android:textColor="@color/textColor"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helveticaneue_medium"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/descTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:layout_marginRight="@dimen/margin_mid"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_medium_size"
+                android:text="Fcbusinkcdb kdnvnsfnvcsxnkdbkfdncbk"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_mid"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:layout_marginRight="@dimen/margin_mid"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/title_small_size"
+                    android:text="The Stadium"/>
+
+                <!--<ToggleButton-->
+                    <!--android:layout_width="@dimen/icon_midup_size"-->
+                    <!--android:layout_height="@dimen/icon_midup_size" -->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@drawable/ic_arrow_bottom_gold"-->
+                    <!--android:textOn=" "-->
+                    <!--android:textOff=" "/>-->
+
+            </RelativeLayout>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/stadiumImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thumbnail_photo_profile"
+                android:layout_marginRight="@dimen/margin_mid"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:layout_marginTop="@dimen/margin_small"
+                app:riv_corner_radius="@dimen/margin_medium"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/descStadiumTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:layout_marginRight="@dimen/margin_mid"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_medium_size"
+                android:text="Fcbusinkcdb kdnvnsfnvcsxnkdbkfdncbk"/>
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/margin_mid"-->
+                <!--android:layout_marginRight="@dimen/margin_mid"-->
+                <!--android:layout_marginTop="@dimen/margin_mid"-->
+                <!--android:fontFamily="@font/helveticaneue_medium"-->
+                <!--android:textColor="@color/textColor"-->
+                <!--android:textSize="@dimen/title_small_size"-->
+                <!--android:text="Social Media"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:layout_marginRight="@dimen/margin_mid"
+                android:layout_marginTop="@dimen/margin_mid">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/lytInsta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/margin_small"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/ic_instagram"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/instaTeam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:id="@+id/lytYt"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/ic_youtube"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/youtubeTeam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:id="@+id/lytTwitter"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/ic_twitter"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/twittTeam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:id="@+id/lytFb"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_mid_size"
+                            android:layout_height="@dimen/icon_mid_size"
+                            android:src="@drawable/ic_facebook"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:id="@+id/fbTeam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_medium_size"
+                            android:layout_marginLeft="@dimen/margin_extra_small"
+                            android:fontFamily="@font/helveticaneue_medium"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

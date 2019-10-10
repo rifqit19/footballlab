@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Football Lab</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tittle_next_match">Next Match</string>
+    <string name="tittle_last_match">Last Match</string>
+    <string name="tittle_height">Height</string>
+    <string name="tittle_weight">Weight</string>
+    <string name="tittle_country">Country</string>
+    <string name="tittle_birth">Birth</string>
+    <string name="tittle_salary">Salary</string>
+    <string name="tittle_signing">Signing</string>
+</resources>

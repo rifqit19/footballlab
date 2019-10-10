@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:padding="0.25pt">
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="R"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_small_size"
+            android:padding="@dimen/margin_extra_small"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iconKlasemen"-->
+                <!--android:layout_width="@dimen/icon_mid_size"-->
+                <!--android:layout_height="@dimen/icon_mid_size"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="@dimen/margin_extra_small"/>-->
+
+            <TextView
+                android:id="@+id/namaTeamKlasemen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Club Name"
+                android:maxLines="1"
+                android:textSize="@dimen/text_small_size"
+                android:textColor="@color/black"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:padding="@dimen/margin_extra_small"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/text_small_size"
+            android:text="MP"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+
+        <TextView
+            android:id="@+id/w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="W"
+            android:textSize="@dimen/text_small_size"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="D"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+        <TextView
+            android:id="@+id/l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="L"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+
+        <TextView
+            android:id="@+id/gf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="GF"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+
+        <TextView
+            android:id="@+id/ga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="GA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+
+        <TextView
+            android:id="@+id/gd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/text_small_size"
+            android:text="GD"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+
+        <TextView
+            android:id="@+id/pts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/text_small_size"
+            android:text="PTS"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:textAlignment="center"
+            android:padding="@dimen/margin_extra_small"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_dark"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

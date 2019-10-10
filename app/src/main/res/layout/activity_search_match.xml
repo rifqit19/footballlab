@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".League.DetailLeague.Search.Match.SearchMatch"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="24dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarhhhh2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/backSearch2"
+                    android:layout_width="@dimen/button_next_height"
+                    android:layout_height="@dimen/button_next_height"
+                    android:background="@drawable/selector_back"
+                    android:layout_centerVertical="true"/>
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/searchhhh2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="match_parent"
+                    android:layout_toEndOf="@id/backSearch2"
+                    android:layout_height="@dimen/button_next_height"
+                    android:layout_marginLeft="@dimen/margin_small"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchMatch"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_gravity="center_horizontal"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_mid"
+        android:clipToPadding="false">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressbarSearchTeam2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="76dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/relEmpty2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="76dp"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/lklklk2"
+            android:text="No Result"
+            android:textSize="@dimen/title_big_size"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/helvetica_neu_bold"/>
+
+        <ImageView
+            android:id="@+id/lklklk2"
+            android:layout_width="@dimen/btn_round_width_login"
+            android:layout_height="@dimen/btn_round_width_login"
+            android:src="@drawable/box"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:paddingTop="24dp">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbarhhhh2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/actionBarSize"-->
+                <!--android:background="@color/colorPrimaryDark">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<ImageButton-->
+                        <!--android:id="@+id/backSearch2"-->
+                        <!--android:layout_width="@dimen/button_next_height"-->
+                        <!--android:layout_height="@dimen/button_next_height"-->
+                        <!--android:background="@drawable/selector_back"-->
+                        <!--android:layout_centerVertical="true"/>-->
+
+                    <!--<android.support.v7.widget.SearchView-->
+                        <!--android:id="@+id/searchhhh2"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_toEndOf="@id/backSearch2"-->
+                        <!--android:layout_height="@dimen/button_next_height"-->
+                        <!--android:layout_marginLeft="@dimen/margin_small"/>-->
+
+                <!--</RelativeLayout>-->
+
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recyclerViewSearchMatch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:padding="@dimen/margin_mid"-->
+            <!--android:clipToPadding="false">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressbarSearchTeam2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/relEmpty2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="gone">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_above="@id/lklklk2"-->
+                <!--android:text="No Result"-->
+                <!--android:textSize="@dimen/title_big_size"-->
+                <!--android:textColor="@color/textColor"-->
+                <!--android:fontFamily="@font/helvetica_neu_bold"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/lklklk2"-->
+                <!--android:layout_width="@dimen/btn_round_width_login"-->
+                <!--android:layout_height="@dimen/btn_round_width_login"-->
+                <!--android:src="@drawable/box"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true"/>-->
+
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>

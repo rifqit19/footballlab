@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewMatch1"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/margin_mid"
+        android:layout_margin="@dimen/margin_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageMatch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/thumbnaimmatch"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius_top_left="@dimen/margin_mid"
+                    app:riv_corner_radius_top_right="@dimen/margin_mid"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="-"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_medium_size"
+                        android:fontFamily="@font/helvetica_neu_bold"/>
+
+                    <TextView
+                        android:id="@+id/awayScore1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/batas"
+                        android:fontFamily="@font/helvetica_neu_bold"
+                        android:text="-"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_extra_small"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/title_big_size"/>
+
+                    <TextView
+                        android:id="@+id/homeScore1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/batas"
+                        android:fontFamily="@font/helvetica_neu_bold"
+                        android:text="-"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_extra_small"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/title_big_size"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/teamMatch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="Kamto VS Kamti"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_medium_size" />
+
+                <TextView
+                    android:id="@+id/timematch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 maret 2019"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:textSize="@dimen/text_small_size"
+                    android:textColor="@color/textColor"
+                    android:layout_marginBottom="@dimen/margin_extra_small"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/today1"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/thumbnail_product_heigt"
+                    android:layout_height="@dimen/icon_mid_size"
+                    android:src="@drawable/ic_ribbon"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Today"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:textSize="@dimen/text_small_size"
+                    android:textColor="@color/textColor"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

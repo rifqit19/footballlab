@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#002BAF</color>
+
+
+    <color name="blue_dark">#002BAF</color>
+    <color name="blue_dark_overlay">#c9002baf</color>
+    <color name="tosca">#088698</color>
+    <color name="tosca_overlay">#cb088698</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightgray">#EBEBEB</color>
+    <color name="gray">#CBCBCB</color>
+    <color name="gray50">#9fcbcbcb</color>
+    <color name="gray_dark">#878789</color>
+    <color name="gray_dark50">#af878789</color>
+    <color name="black">#1F1F1F</color>
+    <color name="black_50">#781f1f1f</color>
+    <color name="black_25">#411f1f1f</color>
+    <color name="red">#EE3B24</color>
+    <color name="white0">#00FFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white80">#CCFFFFFF</color>
+
+    <color name="textColor">@color/black</color>
+    <color name="gold">#E6C454</color>
+
+
+</resources>

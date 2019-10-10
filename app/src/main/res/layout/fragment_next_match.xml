@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favorite.NextMatchFavorite.FragmentNextMatch"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleFavNetxMatch"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/margin_mid"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relEmpty5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/lklklk5"
+            android:text="Empty"
+            android:textSize="@dimen/title_big_size"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/helvetica_neu_bold"/>
+
+        <ImageView
+            android:id="@+id/lklklk5"
+            android:layout_width="@dimen/btn_round_width_login"
+            android:layout_height="@dimen/btn_round_width_login"
+            android:src="@drawable/box"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
