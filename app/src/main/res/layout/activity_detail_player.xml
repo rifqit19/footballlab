@@ -23,6 +23,7 @@
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true"
             >
 
             <ImageView
@@ -32,6 +33,44 @@
                 android:scaleType="centerCrop"
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax"/>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarP"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin"
+                app:contentInsetStart="0dp"
+                android:layout_gravity="top"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_back_detPlayer"
+                        android:layout_width="@dimen/button_next_height"
+                        android:layout_height="@dimen/button_next_height"
+                        android:background="@drawable/selector_back"
+                        android:layout_marginLeft="@dimen/margin_small"/>
+
+                    <TextView
+                        android:id="@+id/ttlP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/btn_back_detPlayer"
+                        android:layout_marginLeft="@dimen/margin_extra_small"
+                        android:text="Detail Pemain"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_medium_size"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
 
 
             <com.rifqit.footballlab.helper.SquereLayout
@@ -48,9 +87,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/actionBarSize"
-                    android:fitsSystemWindows="true"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
+                    android:fitsSystemWindows="true"
                     android:orientation="vertical"
                     app:layout_collapseMode="parallax">
 
@@ -105,44 +144,6 @@
                         android:textColor="@color/textColor"/>
 
                 </LinearLayout>
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbarP"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/actionBarSize"
-                    app:layout_scrollFlags="scroll|enterAlways"
-                    app:layout_collapseMode="pin"
-                    app:contentInsetStart="0dp"
-                    android:layout_gravity="top"
-                    >
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ImageButton
-                            android:id="@+id/btn_back_detPlayer"
-                            android:layout_width="@dimen/button_next_height"
-                            android:layout_height="@dimen/button_next_height"
-                            android:background="@drawable/selector_back"
-                            android:layout_marginLeft="@dimen/margin_small"/>
-
-                        <TextView
-                            android:id="@+id/ttlP"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@id/btn_back_detPlayer"
-                            android:layout_marginLeft="@dimen/margin_extra_small"
-                            android:text="Detail Pemain"
-                            android:visibility="gone"
-                            android:textStyle="bold"
-                            android:layout_centerVertical="true"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/title_medium_size"/>
-                    </RelativeLayout>
-
-                </android.support.v7.widget.Toolbar>
-
             </com.rifqit.footballlab.helper.SquereLayout>
 
         </android.support.design.widget.CollapsingToolbarLayout>

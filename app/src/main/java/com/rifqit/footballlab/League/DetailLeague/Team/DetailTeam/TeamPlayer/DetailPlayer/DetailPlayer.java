@@ -49,7 +49,7 @@ public class DetailPlayer extends AppCompatActivity {
     ProgressDialog progressDialog;
     ProgressBar progressBar;
     TextView height,weight,country,salary,signign,birth,desc,instaP,fbP,twittP;
-    LinearLayout lytInsta,lytFb,lytTwitt;
+    LinearLayout lytInsta,lytFb,lytTwitt, playerPT;
 
     Object strCollege1,strBanner1;
     String idPlayer,  idTeam,  idSoccerXML,  idPlayerManager,  strNationality,  strPlayer,  strTeam,  strSport,  intSoccerXMLTeamID,  dateBorn,  dateSigned, strSigning,  strWage, strBirthLocation, strDescriptionEN, strGender, strPosition, strFacebook, strWebsite, strTwitter, strInstagram, strYoutube, strHeight, strWeight, intLoved, strThumb, strCutout, strFanart1,  strFanart2, strFanart3, strFanart4, strLocked,strCollege,strBanner;
@@ -65,6 +65,7 @@ public class DetailPlayer extends AppCompatActivity {
         posPlayer = findViewById(R.id.posPlayer);
         fotoPlayer = findViewById(R.id.logoPlayer);
         imgCollapse = findViewById(R.id.imageCollapseP);
+        playerPT = findViewById(R.id.linear1P);
 
         instaP = findViewById(R.id.instaPlayer);
         fbP = findViewById(R.id.fbPlayer);
@@ -144,9 +145,11 @@ public class DetailPlayer extends AppCompatActivity {
                 if (scrollRange + verticalOffset == 0) {
                     isShow = true;
                     tittle.setVisibility(View.VISIBLE);
+                    playerPT.setVisibility(View.GONE);
                 } else if (isShow) {
                     isShow = true;
                     tittle.setVisibility(View.GONE);
+                    playerPT.setVisibility(View.VISIBLE);
                 }
             }
         });
