@@ -44,6 +44,11 @@ public interface GetDataService {
             @Query("id") String id
     );
 
+    @GET("searchplayers.php")
+    Call<ResponseBody> getAllSearchPlayer(
+            @Query("t") String t
+    );
+
     @GET("lookupplayer.php")
     Call<ResponseBody> getDetailPlayer(
             @Query("id") String id

@@ -305,5 +305,8 @@ public class DetailTeam extends AppCompatActivity {
     public String getIdTeam(){
         return idTeam;
     }
+    public String getNameTeam(){
+        return strTeam;
+    }
 
 }
